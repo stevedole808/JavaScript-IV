@@ -18,7 +18,6 @@
 //   catchPhrase: `Don't forget the homies`
 // });
 // ```
-
 // #### Person
 
 // * First we need a Person class. This will be our `base-class`
@@ -98,6 +97,17 @@ class Instructor extends Person{
     }
 }
 
+class Student extends Person{
+    constructor(attributes){
+        super(attributes){
+            this.gradClassName = attributes.gradClassName,
+            this.favInstructor = attributes.favInstructor,
+        }
+        listsSubject(){
+            return this.favSubjects,
+        }
+    }
+}
 const person1 = new Person ({
     name: 'Fred',
     location: 'Bedrock',
@@ -117,3 +127,4 @@ console.log(person1.speak());
 console.log(instructor1.speak());
 console.log(instructor1.demo());
 console.log(instructor1.grade());
+console.log
